@@ -1,0 +1,14 @@
+﻿
+Public Class Bookingflight
+    Private Sub book_btn_Click(sender As Object, e As EventArgs) Handles book_btn.Click
+        payflight.Show()
+    End Sub
+
+    Private Sub cancel_btn_Click(sender As Object, e As EventArgs) Handles cancel_btn.Click
+        destination_c.ResetText()
+        arrival_c.ResetText()
+        dtpickerd.ResetText()
+        dtpickerr.ResetText()
+        text_price.ResetText()
+    End Sub
+End Class
